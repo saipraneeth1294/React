@@ -24,7 +24,7 @@ class  App extends React.Component {
     console.log(item);
   }
   onDropchange(props){
-    console.log(props);
+    console.log(props);;
   }
   render(){
   return (
