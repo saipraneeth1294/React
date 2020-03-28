@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import DropDownGroup from './DropDownGroup';
+import InputElement from './InputElement';
+import OnMouseToggleImage from'./OnMouseToggleImage';
 
 const numbers=[1,2,3,4];
 class  App extends React.Component {
@@ -29,19 +30,9 @@ class  App extends React.Component {
   render(){
   return (
     <div>
-    <div className="App">
-        <select onChange={this.onSelectChange}>
-          {numbers.map(val=>(
-             <option key={val} value={val}>{val}</option>
-          ))}
-        </select>
-          </div>
-          <div className='Repeat'>
-          {Array.from({ length: this.state.dropDownValue }, (_, k) => (
-            <DropDownGroup key={k} onDropchange={this.onDropchange} ident={k}></DropDownGroup>
-          ))}
-          </div>
-          </div>
+   <InputElement/>
+   <OnMouseToggleImage primaryImg={'/logo192.png'} secondaryImg={'/logo512.png'}/>
+    </div>
   );
   } 
 }
