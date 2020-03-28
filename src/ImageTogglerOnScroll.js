@@ -23,7 +23,7 @@ const ImageTogglerOnScroll=({primaryImg,secondaryImg})=>{
 return(
     <img 
     src={inView?secondaryImg:primaryImg}
-    alt='' ref={imageRef}/>
+    alt=''  ref={imageRef}/>
 );
 };
 
