@@ -8,7 +8,7 @@ const InputElement=()=>{
             <input 
         onChange={(e)=>{
             setInputText(e.target.value);
-            
+            //I have updated the chnages
         }}
         placeholder='Enter name'/><br/>
         {inputText}
