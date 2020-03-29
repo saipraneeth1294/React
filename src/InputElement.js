@@ -8,15 +8,11 @@ const InputElement=()=>{
             <input 
         onChange={(e)=>{
             setInputText(e.target.value);
-            setHistoryList([...historyList,e.target.value]);
+            
         }}
         placeholder='Enter name'/><br/>
         {inputText}
-        <ul>
-            {historyList.map((rec)=>{
-                return (<div> {rec}</div>);
-            })}
-        </ul>
+       
         </div>
     );
 };
